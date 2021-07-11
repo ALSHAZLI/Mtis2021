@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+
+
+.big{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #2f2fa2;
+    background-position: cover;
+    color: wheat;
+}
+
+.big .big-2 .cont .nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 28px;
+    list-style: none;
+    text-decoration: none;
+}
+.big .big-2 .cont .nav ul a{
+    text-decoration: none;   
+}
+
+.big .big-2 .cont .nav101 .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    position: relative;
+    right: 22px;
+}
+
+.big .big-2 .cont .nav101 { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: -1px;
+
+}
+.big .big-2 .cont .nav101 .nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1px;
+    margin-top: -10px;
+}
+.big .big-2 .cont .nav101 .nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.big .big-2 .cont .nav101 .nav ul li a{
+    color: wheat;
+    
+}
+.big .big-2 .cont .nav101 ul li a:hover{
+    background: #f64c72;
+    transition: .5s;
+}
+.big .big-2 .bbt button{
+    outline: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 25px;
+    font-weight: 400;
+    background: #659DBD;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+}
+
+.big .big-1{
+    width: 20%;
+}
+.big .big-3{
+    width: 20%;
+}
+.big .big-2 .bbt button{
+    width: 28%;
+    height: 70px;
+    font-size: 33px;
+    border-radius: 4px;
+}
+
+.big .big-2 .bbt button:hover{
+    background: #f64c72;
+    transition: .5s;
+}
+
+.big .big-2 .bbt button a{
+    text-decoration: none;
+    font-weight: 900;
+}
+.big .big-2 .bbt h1 {
+    color: white;
+}
+.big .big-2 .bbt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.cont h1{
+    font-size: 30px;
+    text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* 
+vidio stile */
+ /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+} 
+
+.cont .vidio{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.cont .dead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 22px;
+}
+
+.cont .dead .dd2 h2{
+    font-size: 22px;
+    color: chartreuse;
+    margin: 20px;
+    padding: 10px;
+}
+
+.cont .dead .dd2 h2{
+    position: relative;
+    right: 120px;
+    color: #d6bec3;
+}
+.cont .par{
+    font-size: 33px;
+}
+.cont .dead .dd2{
+    position: relative;
+    right: 10px;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.cont .dead .dd2 h1 {
+    font-size: 33px;
+    position: relative;
+    right: 110px;
+    color: #d6bec3;
+}
+.cont .dead img{
+    width: 40%;
+    height: 20%;
+    border-radius: 20px;
+}
+
+.cont .par{
+    text-align: center;
+}
+.big .big-2 .bbt{
+    position: relative;
+    margin-top: 30px;
+    
+}
+.big .big-2 .footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
